@@ -1,8 +1,6 @@
 class Category < ApplicationRecord
   has_many :contents
 
-  validates :name, presence: true
-  validates :description, presence: true
-  validates :photo, allow_blank: true
-  validates :active, presence: true
+  validates_presence_of :name
+  validates_presence_of :description
 end
