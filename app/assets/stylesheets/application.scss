@@ -5,6 +5,7 @@
 
 body {
   background-color: whitesmoke;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 footer {
@@ -29,8 +30,18 @@ header {
   background-position:50% 8%;
 }
 
-.banner-title{
+.banner-title {
   padding: 5%;
+}
+
+.banner-title h1 {
+  font-size: 4em;
+    font-family: 'Barrio', cursive;
+}
+
+.banner-title h5 {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .headsearch {
@@ -54,7 +65,11 @@ header a {
 }
 
 .li-width {
-  width: 13em;
+  width: 15em;
+}
+
+.btn-width {
+  width: 8em;
 }
 
 .padding-bottom {
@@ -68,6 +83,8 @@ header a {
   background-color: #0090A3;
   border-color: #007E8F;
   border-radius: 0;
+  border: 0;
+  transition: all 0.3s ease 0s;
 }
 
 .btn-first:hover,
@@ -117,6 +134,8 @@ fieldset[disabled] .btn-first.active {
   background-color: #F38030;
   border-color: #F27218;
   border-radius: 0;
+  border: 0;
+  transition: all 0.3s ease 0s;
 }
 
 .btn-second:hover,
