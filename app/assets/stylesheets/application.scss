@@ -1,2 +1,179 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// footer
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+footer {
+  background-image: image-url('footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+footer a {
+  text-decoration: none !important;
+  color:inherit;
+}
+
+// header
+
+header {
+  background-image: image-url('header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  background-position:50% 8%;
+}
+
+.banner-title {
+  padding: 5%;
+}
+
+.banner-title h1 {
+  font-size: 4em;
+    font-family: 'Barrio', cursive;
+}
+
+.banner-title h5 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.headsearch {
+  background-color: rgba(000,0,0,0.8);
+  padding: 3%;
+}
+
+header a {
+  text-decoration: none !important;
+  color:inherit;
+}
+
+// Misc.
+
+.no-radius {
+  border-radius: 0;
+}
+
+.full-radius {
+  border-radius: 100% !important;
+}
+
+.li-width {
+  width: 15em;
+}
+
+.btn-width {
+  width: 8em;
+}
+
+.padding-bottom {
+  padding-bottom: 0.5em;
+}
+
+// btn-first
+
+.btn-first {
+  color: #FFFFFF;
+  background-color: #0090A3;
+  border-color: #007E8F;
+  border-radius: 0;
+  border: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-first:hover,
+.btn-first:focus,
+.btn-first:active,
+.btn-first.active,
+.open .dropdown-toggle.btn-first {
+  color: #FFFFFF;
+  background-color: #005A66;
+  border-color: #007E8F;
+}
+
+.btn-first:active,
+.btn-first.active,
+.open .dropdown-toggle.btn-first {
+  background-image: none;
+}
+
+.btn-first.disabled,
+.btn-first[disabled],
+fieldset[disabled] .btn-first,
+.btn-first.disabled:hover,
+.btn-first[disabled]:hover,
+fieldset[disabled] .btn-first:hover,
+.btn-first.disabled:focus,
+.btn-first[disabled]:focus,
+fieldset[disabled] .btn-first:focus,
+.btn-first.disabled:active,
+.btn-first[disabled]:active,
+fieldset[disabled] .btn-first:active,
+.btn-first.disabled.active,
+.btn-first[disabled].active,
+fieldset[disabled] .btn-first.active {
+  background-color: #0090A3;
+  border-color: #007E8F;
+}
+
+.btn-first .badge {
+  color: #0090A3;
+  background-color: #FFFFFF;
+}
+
+// btn-second
+
+.btn-second {
+  color: #FFFFFF;
+  background-color: #F38030;
+  border-color: #F27218;
+  border-radius: 0;
+  border: 0;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-second:hover,
+.btn-second:focus,
+.btn-second:active,
+.btn-second.active,
+.open .dropdown-toggle.btn-second {
+  color: #FFFFFF;
+  background-color: #E76E0D;
+  border-color: #F27218;
+}
+
+.btn-second:active,
+.btn-second.active,
+.open .dropdown-toggle.btn-second {
+  background-image: none;
+}
+
+.btn-second.disabled,
+.btn-second[disabled],
+fieldset[disabled] .btn-second,
+.btn-second.disabled:hover,
+.btn-second[disabled]:hover,
+fieldset[disabled] .btn-second:hover,
+.btn-second.disabled:focus,
+.btn-second[disabled]:focus,
+fieldset[disabled] .btn-second:focus,
+.btn-second.disabled:active,
+.btn-second[disabled]:active,
+fieldset[disabled] .btn-second:active,
+.btn-second.disabled.active,
+.btn-second[disabled].active,
+fieldset[disabled] .btn-second.active {
+  background-color: #F38030;
+  border-color: #F27218;
+}
+
+.btn-second .badge {
+  color: #F38030;
+  background-color: #FFFFFF;
+}
