@@ -193,6 +193,60 @@ fieldset[disabled] .btn-second.active {
   background-color: #FFFFFF;
 }
 
+// btn-trans
+
+.btn-trans {
+  color: #FFFFFF;
+  background-color: rgba(000,0,0,0.1);
+  border-color: #FFFFFF;
+  border-radius: 0;
+  transition: all 0.3s ease 0s;
+  padding: 0.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  font-size: 1.3em;
+}
+
+.btn-trans:hover,
+.btn-trans:focus,
+.btn-trans:active,
+.btn-trans.active,
+.open .dropdown-toggle.btn-trans {
+  color: #FFFFFF;
+  background-color: #F38030;
+  border-color: #F38030;
+}
+
+.btn-trans:active,
+.btn-trans.active,
+.open .dropdown-toggle.btn-trans {
+  background-image: none;
+}
+
+.btn-trans.disabled,
+.btn-trans[disabled],
+fieldset[disabled] .btn-trans,
+.btn-trans.disabled:hover,
+.btn-trans[disabled]:hover,
+fieldset[disabled] .btn-trans:hover,
+.btn-trans.disabled:focus,
+.btn-trans[disabled]:focus,
+fieldset[disabled] .btn-trans:focus,
+.btn-trans.disabled:active,
+.btn-trans[disabled]:active,
+fieldset[disabled] .btn-trans:active,
+.btn-trans.disabled.active,
+.btn-trans[disabled].active,
+fieldset[disabled] .btn-trans.active {
+  background-color: #000000;
+  border-color: #FFFFFF;
+}
+
+.btn-trans .badge {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 // carousel
 
 .card-img-top {
