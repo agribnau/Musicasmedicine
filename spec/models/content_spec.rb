@@ -1,15 +1,15 @@
 require 'rails_helper'
 
 RSpec.describe Content, type: :model do
-  describe "Order content " do
-    context "New,old content" do
-      let(:cat1) { create(:category) }
-      let(:content)  { create(:content, info_label:'old content', category: cat1, created_at: Date.today - Rational(1)) }
-      let(:content_newest)  { create(:content, info_label:'new content', category: cat1, created_at: Date.today) }
+  describe ".sort_by_date" do
+    let(:cat1) { create(:category) }
+    let!(:content)  { create(:content, info_label:'old content',active: true, category: cat1) }
+    let!(:content_newest)  { create(:content, info_label:'new content',active: true, category: cat1) }
 
-      it "order content created_at" do
-        Content.sort_by_date.all.should eq [content_newest, content]
-      end
+    it "order content created_at" do
+      expect(Content.sort_by_date.first).to eq content_newest
+      expect(Content.sort_by_date.last).to eq content
+
     end
   end
   it "only doesn't show content that is inactive" do
