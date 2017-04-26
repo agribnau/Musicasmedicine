@@ -4,10 +4,9 @@ Testimonial.destroy_all
 
 #Testimonial
 
-testi1 = Testimonial.create!(first_name: 'Daniel. J', last_name: 'Levitin', quote: '"We\'ve found compelling evidence that musical interventions can play a health-care role in settings ranging from operating rooms to family clinics,"', photo: 'http://www.innonavi.com/wp-content/uploads/2016/02/DanielLevitin_cArsenioCoroa-350x354.jpg', active: true )
-testi2 = Testimonial.create!(first_name: 'Lisa', last_name: 'Hartling', quote: '"There is growing scientific evidence showing that the brain responds to music in very specific ways"', photo:'http://childhealth.cochrane.org/sites/childhealth.cochrane.org/files/public/uploads/Hartling%20September%202016.jpg', active: true )
-testi3 = Testimonial.create!(first_name: 'Melanie', last_name: 'Kwan', quote: '"Active music engagement allowed the patients to reconnect with the healthy parts of themselves, even in the face of a debilitating condition or disease-related suffering"', photo: 'http://68.media.tumblr.com/7de1b6fb022a722dfc383ef81443161e/tumblr_inline_nmqkc9kJG11sf7n9q_1280.jpg', active: true )
-
+testi1 = Testimonial.create!(first_name: 'Daniel. J', last_name: 'Levitin', title: 'Psychologist', quote: '"We\'ve found compelling evidence that musical interventions can play a health-care role in settings ranging from operating rooms to family clinics,"', photo: 'http://www.innonavi.com/wp-content/uploads/2016/02/DanielLevitin_cArsenioCoroa-350x354.jpg', active: true )
+testi2 = Testimonial.create!(first_name: 'Lisa', last_name: 'Hartling', title: 'Professor of Pediatrics', quote: '"There is growing scientific evidence showing that the brain responds to music in very specific ways"', photo:'http://childhealth.cochrane.org/sites/childhealth.cochrane.org/files/public/uploads/Hartling%20September%202016.jpg', active: true )
+testi3 = Testimonial.create!(first_name: 'Melanie', last_name: 'Kwan', title: 'Music Therapist' , quote: '"Active music engagement allowed the patients to reconnect with the healthy parts of themselves, even in the face of a debilitating condition or disease-related suffering"', photo: 'http://68.media.tumblr.com/7de1b6fb022a722dfc383ef81443161e/tumblr_inline_nmqkc9kJG11sf7n9q_1280.jpg', active: true )
 
 
  # Category
