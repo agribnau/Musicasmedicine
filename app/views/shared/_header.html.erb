@@ -30,7 +30,7 @@
         <h1>Music as Medicine</h1>
       </b>
       <h5>Where neuroscience meets healthcare</h5>
-      <a href="about" class="btn btn-second">About</a>
+      <a href="about" class="btn btn-trans">About</a>
       <p>&nbsp;</p>
     </div>
     <!-- Banner-title -->
@@ -38,11 +38,9 @@
   <!-- Container -->
   <div class="headsearch">
     <div class="col-md-6 col-md-offset-3">
-      <!-- <input type="text" class="form-control no-radius" placeholder="Search for..."> -->
       <%= form_tag(@category, method: "get", id: "search-form", class: "input-group") do %>
       <%= text_field_tag :search, params[:search], placeholder: "Search", class: "form-control " %>
       <span class="input-group-btn">
-        <!-- <button class="btn btn-second" type="button">Search!</button> -->
         <%= submit_tag "Search", class: "btn btn-second" %>
       </span>
       <% end %>
