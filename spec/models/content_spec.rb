@@ -8,7 +8,7 @@ RSpec.describe Content, type: :model do
       let(:content_newest)  { create(:content, info_label:'new content', category: cat1, created_at: Date.today) }
 
       it "order content created_at" do
-        Content.sort_by_date.all.should == [content_newest, content]
+        Content.sort_by_date.all.should eq [content_newest, content]
       end
     end
   end
