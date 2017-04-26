@@ -1,7 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+//carousel
+.card-img-top {
+  width: 400px;
+  height: 400px;
+}
+
+
+// footer
+
 // body
+
 body {
   background-color: whitesmoke;
   font-family: 'Allerta Stencil', sans-serif;

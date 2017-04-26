@@ -5,7 +5,7 @@ class ContentsController < ApplicationController
   end
 
   def show
-    @content =  Content.find(params[:id])
+    @content =  Content.find(params[:id]).display_number
   end
 
 
