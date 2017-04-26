@@ -195,6 +195,13 @@ fieldset[disabled] .btn-second.active {
 
 // carousel
 
+.carousel-control.right {
+  background-image: none !important;
+}
+
+.carousel-control.left {
+  background-image: none !important;
+}
 .card-img-top {
-  height: 400px;
+  height: 350px;
 }
