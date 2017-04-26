@@ -3,16 +3,23 @@
     <div class="headbar">
       <ul class="list-inline">
         <li>
-          <h2><a href="#">mAm</a></h2>
-        </li>
-        <li class="pull-right">
           <h2>
-            <a href="#" class="btn btn-first btn-width">Right</a>
+            <a href="#">MaM</a>
+            <i class="fa fa-stethoscope" style="font-size:48px;color:white"></i>
           </h2>
         </li>
         <li class="pull-right">
           <h2>
-            <a href="#" class="btn btn-first btn-width">Left</a>
+            <a href="#carousel-example-generic" class="btn btn-second btn-width">Categories</a>
+          </h2>
+        <li class="pull-right">
+          <h2>
+            <a href="#testimonials" class="btn btn-second btn-width">Testimonials</a>
+          </h2>
+        </li>
+        <li class="pull-right">
+          <h2>
+            <a href="#contact" class="btn btn-second btn-width">Contact</a>
           </h2>
         </li>
       </ul>
@@ -20,23 +27,25 @@
     <!-- Headbar -->
     <div class="row banner-title text-center">
       <b>
-        <h1>Artiesten boek je eenvoudig online</h1>
+        <h1>Music as Medicine</h1>
       </b>
-      <h5>Van coverband en jazzband tot DJ en zanger: +850 artiesten boek je via Plugify.</h5>
-      <a href="#" class="btn btn-second">Hoe Het Werkt</a>
+      <h5>Where neuroscience meets healthcare</h5>
+      <a href="about" class="btn btn-second">About</a>
       <p>&nbsp;</p>
     </div>
     <!-- Banner-title -->
   </div>
   <!-- Container -->
-  <div class="row headsearch">
+  <div class="headsearch">
     <div class="col-md-6 col-md-offset-3">
-      <div class="input-group">
-        <input type="text" class="form-control no-radius" placeholder="Search for...">
-        <span class="input-group-btn">
-          <button class="btn btn-second" type="button">Search!</button>
-        </span>
-      </div>
+      <!-- <input type="text" class="form-control no-radius" placeholder="Search for..."> -->
+      <%= form_tag(@category, method: "get", id: "search-form", class: "input-group") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search", class: "form-control " %>
+      <span class="input-group-btn">
+        <!-- <button class="btn btn-second" type="button">Search!</button> -->
+        <%= submit_tag "Search", class: "btn btn-second" %>
+      </span>
+      <% end %>
     </div>
   </div>
   <!-- Headsearch -->

@@ -1,18 +1,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// footer
+// body
 
 body {
   background-color: whitesmoke;
   font-family: 'Allerta Stencil', sans-serif;
 }
 
+// footer
+
 footer {
   background-image: image-url('footer-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: whitesmoke;
+  margin-top: 5em;
 }
 
 footer a {
@@ -20,6 +23,13 @@ footer a {
   color:inherit;
 }
 
+.center {
+  text-align: center;
+}
+
+.center h4 {
+  font-size: 1.5em;
+}
 // header
 
 header {
@@ -35,18 +45,19 @@ header {
 }
 
 .banner-title h1 {
-  font-size: 4em;
+  font-size: 6em;
     font-family: 'Barrio', cursive;
 }
 
 .banner-title h5 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 .headsearch {
   background-color: rgba(000,0,0,0.8);
-  padding: 3%;
+  padding-bottom: 5%;
+  padding-top: 3%;
 }
 
 header a {
@@ -54,6 +65,9 @@ header a {
   color:inherit;
 }
 
+a.btn-second {
+  margin-top: 10px;
+}
 // Misc.
 
 .no-radius {
@@ -65,7 +79,8 @@ header a {
 }
 
 .li-width {
-  width: 15em;
+  width: 40em;
+  font-size: 1em;
 }
 
 .btn-width {
@@ -176,4 +191,17 @@ fieldset[disabled] .btn-second.active {
 .btn-second .badge {
   color: #F38030;
   background-color: #FFFFFF;
+}
+
+// carousel
+
+.carousel-control.right {
+  background-image: none !important;
+}
+
+.carousel-control.left {
+  background-image: none !important;
+}
+.card-img-top {
+  height: 350px;
 }
