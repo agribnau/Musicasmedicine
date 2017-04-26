@@ -12,4 +12,16 @@ RSpec.describe Content, type: :model do
       end
     end
   end
+  it "only doesn't show content that is inactive" do
+    inactive= Content.create(info_label: "info", info_text: "more detailled info", active: false )
+    active= Content.create(info_label: "info", info_text: "more detailled info", active: true )
+
+    expect(inactive.active).to eq(false)
+  end
+  it "only shows content that is active" do
+    inactive= Content.create(info_label: "info", info_text: "more detailled info", active: false )
+    active= Content.create(info_label: "info", info_text: "more detailled info", active: true )
+
+    expect(active.active).to eq(true)
+  end
 end
