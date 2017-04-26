@@ -249,8 +249,30 @@ fieldset[disabled] .btn-trans.active {
 
 // carousel
 
+.card {
+  color: #ffffff;
+}
+
 .card-img-top {
   height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:50% 8%;
+}
+
+.card-border {
+  background-color: rgba(000,0,0,0.4);
+  height: 360px;
+  padding-top: 15em;
+  transition: all 0.3s ease 0s;
+  border: 1.5px solid #fff;
+}
+
+.card-img-top:hover > .card-border {
+    background-color: rgba(000,0,0,0.2);
+    height: 150px;
+    padding-top: 1em;
+    border: 1.5px solid #fff;
 }
 
 // testimonial

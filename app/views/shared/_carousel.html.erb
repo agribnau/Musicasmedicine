@@ -1,19 +1,23 @@
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <% @categories.in_groups_of(3, false) do |category_group| %>
+
     <div class="item">
       <div class="container">
         <div class="row">
           <% category_group.each do |category| %>
-          <div class="col-md-4">
-            <div class="card text-center">
-              <%= image_tag category.photo, class: "card-img-top img-responsive" %>
-              <div class="card-block">
-                <h4 class="card-title"><%= link_to category.name, category_path(category.id) %></h4>
-                <p class="card-text"><%= category.description %></p>
+          <a href="<%=category_path(category.id)%>">
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-img-top img-responsive" style="background-image: url('<%= category.photo %>')">
+                  <div class="card-border">
+                    <h3><%= category.name %></h3>
+                    <h5><%= category.description %></h5>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
           <% end %>
         </div>
       </div>
