@@ -2,7 +2,6 @@
 @import "bootstrap";
 
 // body
-
 body {
   background-color: whitesmoke;
   font-family: 'Allerta Stencil', sans-serif;
@@ -188,4 +187,11 @@ fieldset[disabled] .btn-second.active {
 .btn-second .badge {
   color: #F38030;
   background-color: #FFFFFF;
+}
+
+// carousel
+
+.card-img-top {
+  width: 300px;
+  height: 300px;
 }
