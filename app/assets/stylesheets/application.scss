@@ -30,6 +30,7 @@ footer a {
 .center h4 {
   font-size: 1.5em;
 }
+
 // header
 
 header {
@@ -38,6 +39,10 @@ header {
   background-size: cover;
   color: whitesmoke;
   background-position:50% 8%;
+}
+
+.brand a:hover {
+  color: #ffffff;
 }
 
 .banner-title {
