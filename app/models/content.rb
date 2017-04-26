@@ -5,6 +5,8 @@ class Content < ApplicationRecord
   validates_presence_of :category
   default_scope { where(active: true)}
 
+  mount_uploader :photo, ImageUploader
+
   def self.search(search)
     where("info_label ILIKE ? OR info_text ILIKE ?", "%#{search}%", "%#{search}%")
   end
