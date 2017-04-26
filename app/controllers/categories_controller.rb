@@ -3,6 +3,7 @@ class CategoriesController < ApplicationController
 
   def index
     @categories = Category.all
+    redirect_to root_path
   end
 
   def show
