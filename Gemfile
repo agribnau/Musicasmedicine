@@ -9,8 +9,13 @@ end
 gem 'devise', '~> 4.2'
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+# image hosting
+gem 'carrierwave', '0.11.2'
+gem 'cloudinary', '1.2.3'
 
-#Add bootstrap-sass
+gem 'pry'
+
+#add bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
