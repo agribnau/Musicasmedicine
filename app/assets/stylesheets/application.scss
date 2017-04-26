@@ -10,10 +10,14 @@
 
 // footer
 
+// body
+
 body {
   background-color: whitesmoke;
   font-family: 'Allerta Stencil', sans-serif;
 }
+
+// footer
 
 footer {
   background-image: image-url('footer-bg.jpg');
@@ -28,6 +32,13 @@ footer a {
   color:inherit;
 }
 
+.center {
+  text-align: center;
+}
+
+.center h4 {
+  font-size: 2em;
+}
 // header
 
 header {
@@ -74,7 +85,8 @@ header a {
 }
 
 .li-width {
-  width: 15em;
+  width: 40em;
+  font-size: 1.5em;
 }
 
 .btn-width {
@@ -187,6 +199,9 @@ fieldset[disabled] .btn-second.active {
   background-color: #FFFFFF;
 }
 
-.center {
-  text-align: center;
+// carousel
+
+.card-img-top {
+  width: 400px;
+  height: 400px;
 }
