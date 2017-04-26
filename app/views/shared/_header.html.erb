@@ -10,7 +10,7 @@
         </li>
         <li class="pull-right">
           <h2>
-            <a href="#carousel-example-generic" class="btn btn-second btn-width">Categories</a>
+            <a href="#categories" class="btn btn-second btn-width">Categories</a>
           </h2>
         <li class="pull-right">
           <h2>
@@ -36,6 +36,7 @@
     <!-- Banner-title -->
   </div>
   <!-- Container -->
+  <% if params[:id] != nil && current_page?(category_path{params[:id]}) %>
   <div class="headsearch">
     <div class="col-md-6 col-md-offset-3">
       <%= form_tag(@category, method: "get", id: "search-form", class: "input-group") do %>
@@ -46,5 +47,6 @@
       <% end %>
     </div>
   </div>
+  <% end %>
   <!-- Headsearch -->
 </header>
