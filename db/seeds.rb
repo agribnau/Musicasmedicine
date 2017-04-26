@@ -12,15 +12,15 @@ testi3 = Testimonial.create!(first_name: 'Melanie', last_name: 'Kwan', quote: '"
 
  # Category
 
-cat1 = Category.create!(name: 'Music on brain and body', description:'General effect of music on brain and body', photo:'http://art2.sewanee.edu/class/fypsummers/files/2014/08/con-doctor.jpg', active: true)
-cat2 = Category.create!(name: 'Music in (children\'s) hospital and other care', description: 'General effect of music on children\'s hospital and other care', photo:'https://sobernation.com/wp-content/uploads/2013/08/music-as-medicine.jpg', active: true)
-cat3 = Category.create!(name: 'Alzheimer / Dementia / Ageing brain', description:'General effect of music on Alzheimer / Dementia / ageing brain', photo:'http://maxpixel.freegreatpicture.com/static/photo/1x/Donald-Trump-Trump-Alzheimers-Warning-Dementia-1750965.jpg', active: true)
-cat4 = Category.create!(name: 'Postoperative pain and anxiety', description:'General effect of music on postoperative pain and anxiety:', photo:'http://www.bite-the-dust.com/images/nprmusicmedicine.jpg', active: true)
+cat1 = Category.create!(name: 'Music on brain and body', description:'General effect of music on brain & body', photo:'http://art2.sewanee.edu/class/fypsummers/files/2014/08/con-doctor.jpg', active: true)
+cat2 = Category.create!(name: 'Music and Children', description: 'General effect of music on children\'s', photo:'https://sobernation.com/wp-content/uploads/2013/08/music-as-medicine.jpg', active: true)
+cat3 = Category.create!(name: 'Alzheimer / Dementia / Ageing brain', description:'General effect of music on Alzheimer & Dementia', photo:'http://maxpixel.freegreatpicture.com/static/photo/1x/Donald-Trump-Trump-Alzheimers-Warning-Dementia-1750965.jpg', active: true)
+cat4 = Category.create!(name: 'Postoperative pain and anxiety', description:'General effect of music on postoperative pain', photo:'http://www.bite-the-dust.com/images/nprmusicmedicine.jpg', active: true)
 cat5 = Category.create!(name: 'Oncology', description:'General effect of music in oncology', photo:'http://www.patientcareonline.com/sites/default/files/styles/max_width/public/images/media/Slide2_260.JPG?itok=BrehM8cE', active: true)
-cat6 = Category.create!(name: 'Depression and anxiety', description:'General effect of music on Depression and anxiety', photo:'http://static.rappler.com/images/science-solitaire-music-as-medicine-20130404.jpg', active: true)
+cat6 = Category.create!(name: 'Depression and anxiety', description:'General effect of music on Depression & anxiety', photo:'http://static.rappler.com/images/science-solitaire-music-as-medicine-20130404.jpg', active: true)
 cat7 = Category.create!(name: 'Parkinson\'s', description:'General effect of music on Parkinson\'s', photo:'http://images.sxsw.com/XqKZzR7Lbz1qAd_aJ2SxgfFVT9E=/39x30:474x341/950x/images.sxsw.com/27/9aabe10c-c958-4e6a-be8e-7547d61f9374/PP65723.png', active: true)
-cat8 = Category.create!(name: 'Coronary Heart Disease', description:'General effect of music on Coronary Heart Disease', photo:'https://ac-cdn.azureedge.net/infusionnewssiteimages/agingcare/d574b6d7-7cb0-4dda-9e71-5ce089eb4f56.jpg', active: true)
-cat9 = Category.create!(name: 'ADHD / Autism', description:'General effect of music on ADHD / Autism', photo:'http://media.arkansasonline.com/img/photos/2015/06/16/web_music_therapy.jpg', active: true)
+cat8 = Category.create!(name: 'Coronary Heart Disease', description:'General effect of music on Heart Disease', photo:'https://ac-cdn.azureedge.net/infusionnewssiteimages/agingcare/d574b6d7-7cb0-4dda-9e71-5ce089eb4f56.jpg', active: true)
+cat9 = Category.create!(name: 'ADHD / Autism', description:'General effect of music on ADHD & Autism', photo:'http://media.arkansasonline.com/img/photos/2015/06/16/web_music_therapy.jpg', active: true)
 
 # Content
 
