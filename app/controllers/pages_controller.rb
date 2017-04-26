@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
-  def about
+  def home
+    @categories = Category.all
+    @testimonials = Testimonial.all
   end
 end
