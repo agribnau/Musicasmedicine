@@ -31,6 +31,18 @@ footer a {
   font-size: 1.5em;
 }
 
+.page-title {
+  background-color: rgba(255,255,255,1);
+  padding: 1em;
+  margin-top: -5em;
+  margin-bottom: 3em;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+
+.right-border {
+
+}
+
 // header
 
 header {
@@ -89,7 +101,7 @@ a.btn-second {
 }
 
 .btn-width {
-  width: 8em;
+  width: 10em;
 }
 
 .padding-bottom {
@@ -281,14 +293,6 @@ fieldset[disabled] .btn-trans.active {
 }
 
 // contents in category show
-
-.page-title {
-  background-color: rgba(255,255,255,1);
-  padding: 1em;
-  margin-top: -5em;
-  margin-bottom: 3em;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
-}
 
 .media-container a {
   color: #333333;
