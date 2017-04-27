@@ -1,55 +1,42 @@
+<div class=" text-center page-title">
+  <h2><%= @category.name %></h2>
+  <h5><%= @category.description %></h5>
+</div>
 <div class="container">
+  <div class="col-md-12">
 
-    <div class="col-md-12">
-      <% @iteration = false %>
-      <% @contents.each do |content| %>
-      <div class="media">
-        <% if @iteration == false %>
-        <div class="media-left">
-          <a href="#">
-            <% if content.photo != '' %>
-            <%= image_tag content.photo, height: '100em' %>
-          <% else %>
-            <%= image_tag 'http://pirateghs.files.wordpress.com/2014/03/funny-monkey-1.jpg', height: "100em" %>
-            <% end %>
-          </a>
-        </div>
-        <div class="media-body">
-          <h4 class="media-heading"><%= content.info_label %></h4>
-          <p><%= content.info_text %></p>
-          <h5>
-            <a href="#"><%= link_to 'Read more...' ,content.website_link, :target => "_blank"  %></a>
-          </h5>
-        </div>
-        <% end %>
-        <% if @iteration == true %>
-        <div class="media-body">
-          <h4 class="media-heading"><%= content.info_label %></h4>
-          <p><%= content.info_text %></p>
-          <h5>
-            <a href="#"><%= link_to 'Read more...' ,content.website_link %></a>
-          </h5>
-        </div>
-        <div class="media-right">
-          <a href="#">
-            <% if content.photo != '' %>
-            <%= image_tag content.photo, height: '100em' %>
-          <% else %>
-            <%= image_tag 'http://pirateghs.files.wordpress.com/2014/03/funny-monkey-1.jpg', height: "100em" %>
-            <% end %>
+    <% @iteration = false %>
+    <% @contents.each do |content| %>
+    <div class="media-container">
+      <a href="<%= content.website_link != nil ? content.website_link : category_content_path(params[:id]) %>" target="_blank">
+        <div class="media <%= @iteration == false ? 'white-highlighter' : 'orange-hightlighter' %>">
+          <!-- Left thumbnail -->
+          <% if @iteration == false %>
+          <div class="media-left">
+            <div class="media-thumbnail" style="background-image: url('<%= content.photo != '' ? content.photo : " http://budapesttimes.hu/wp-content/themes/newsroom14/img/placeholder.png" %>')"></div>
           </div>
           <% end %>
-        </div>
-
-        <% if @iteration == false %>
-        <% @iteration = true %>
-      <% else %>
-        <% @iteration = false %>
-        <% end %>
-
-        <!-- media -->
-        <% end %>
+          <div class="media-body">
+            <h4 class="media-heading"><%= content.info_label.first(80) %>...</h4>
+            <hr>
+            <p><%= content.info_text.first(200) %>...</p>
+          </div>
+          <!-- Right thumbnail -->
+          <% if @iteration == true %>
+          <div class="media-right">
+            <div class="media-thumbnail" style="background-image: url('<%= content.photo != '' ? content.photo : " http://budapesttimes.hu/wp-content/themes/newsroom14/img/placeholder.png" %>')"></div>
+          </div>
+          <% end %>
+        </a>
       </div>
-      <!-- col -->
+
+      <% @iteration == false ? @iteration = true : @iteration = false %>
+
+    </div>
+    <!-- media container -->
+    <% end %>
+    <!-- media -->
   </div>
-  <!-- container -->
+  <!-- col -->
+</div>
+<!-- container -->
