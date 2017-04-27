@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :categories do
-    resources :content
+    resources :contents
   end
 
   resources :testimonials, only: [ :index, :edit, :update ]
