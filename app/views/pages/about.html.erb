@@ -1,0 +1,12 @@
+<div class="container about">
+  <div class="row">
+  <% @abouts.each do |about| %>
+    <h2 class="center"><%= about.name %></h2>
+    <br>
+    <p class="about-right about-italic"><%= about.motto %></p>
+    <br>
+    <p><%= image_tag about.photo, class: "img-circle about-img", size: "240x180" %></p>
+    <p class="about-right about-width"><%= about.bio %></p>
+  <% end %>
+  </div>
+</div.
