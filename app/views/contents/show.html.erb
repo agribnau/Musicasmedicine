@@ -1,0 +1,25 @@
+<div class=" text-center page-title">
+  <h2><%= @content.info_label %></h2>
+  <h5></h5>
+</div>
+<div class="container">
+  <div class="col-md-12">
+    <div class="video-container text-center">
+      <% if @content.video != '' %>
+      <iframe width="853" height="480" src="<%= @content.video %>" frameborder="0" allowfullscreen></iframe>
+      <% end %>
+    </div>
+    <div class="media white-highlighter">
+      <div class="media-body">
+        <h4 class="media-heading">
+          <%= @content.info_label %></h4>
+        <hr>
+        <p>
+          <%= @content.info_text %>
+        </p>
+      </div>
+    </div>
+    <!-- col -->
+  </div>
+  <!-- container -->
+</div>
