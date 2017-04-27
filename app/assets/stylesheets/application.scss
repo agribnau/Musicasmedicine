@@ -338,7 +338,14 @@ fieldset[disabled] .btn-trans.active {
 // testimonial
 
 .content {
-    padding-top: 30px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: #FFFFFF;
+}
+
+.testimonial-container {
+  background-color: rgba(243,128,48,1);
+  margin-bottom: -5em;
 }
 
 /* Testimonials */
@@ -395,13 +402,15 @@ fieldset[disabled] .btn-trans.active {
     display: block;
 }
 .testimonials span.testimonials-name {
-    color: #F38030;
+    // color: #F38030;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: 300;
     margin: 23px 0 7px;
 }
 .testimonials span.testimonials-post {
-    color: #656565;
+    // color: #656565;
+    color: #FFFFFF;
     font-size: 12px;
 }
 
