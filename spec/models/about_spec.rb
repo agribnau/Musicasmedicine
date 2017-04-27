@@ -6,7 +6,7 @@ RSpec.describe About, type: :model do
     let(:inactive) { create(:about, active: false) }
 
     it "array without inactive abouts" do
-      About.all.should eq [active]
+      expect(About.all).to eq [active]
     end
   end
 end

@@ -9,4 +9,16 @@ RSpec.describe PagesController, type: :controller do
     end
   end
 
+  describe "GET #about" do
+    let(:about) { create(:about) }
+    it "populates an array of abouts" do
+      get :about
+      expect(assigns(:abouts)).to match_array([about])
+    end
+
+    it "renders the :about view" do
+      get :about
+      expect(response).to render_template :about
+    end
+  end
 end
