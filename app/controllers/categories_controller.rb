@@ -7,7 +7,6 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @contents = @category.contents
     if params[:search]
       @contents = Content.search(params[:search]).order("created_at DESC")
     else
