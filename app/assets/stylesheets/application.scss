@@ -280,6 +280,53 @@ fieldset[disabled] .btn-trans.active {
     border: 1.5px solid #fff;
 }
 
+// contents in category show
+
+.page-title {
+  background-color: rgba(255,255,255,1);
+  padding: 1em;
+  margin-top: -5em;
+  margin-bottom: 3em;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+
+.media-container a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.media-container:hover > .white-highlighter {
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  background-color: rgba(4,131,96,0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.media-container:hover > .orange-hightlighter {
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  background-color: rgba(4,131,96,0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.media {
+  padding: 1em;
+}
+
+.media-thumbnail {
+  height: 10em;
+  width: 20em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+}
+
+.white-highlighter {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.orange-hightlighter {
+  background-color: rgba(243,128,48,0.1);
+}
+
 // testimonial
 
 .content {
