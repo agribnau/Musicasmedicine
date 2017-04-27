@@ -3,7 +3,7 @@ class CategoriesController < ApplicationController
 
   def index
     @categories = Category.all
-    redirect_to root_path
+    @categories_top_9 = Category.order("created_at DESC").take(9)
   end
 
   def show
