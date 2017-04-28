@@ -7,7 +7,7 @@ ActiveAdmin.register Content do
       f.input :info_label
       f.input :info_text
       f.input :video
-      f.input :photo, as: :file
+      f.input :photo
       f.input :active
     end
     f.actions
