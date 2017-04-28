@@ -11,7 +11,6 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   </head>
 
   <body>
@@ -19,7 +18,22 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
+
     <%= yield %>
     <%= render 'shared/footer' %>
+    <script>
+    $('.play').click(function(){
+        var $this = $(this);
+        var id = $this.attr('id').replace(/btn/, '');
+        $this.toggleClass('active');
+        if($this.hasClass('active')){
+            $this.text("\u2016");
+            $('audio[id^="sound"]')[id-1].play();
+        } else {
+            $this.text("\u25B6");
+            $('audio[id^="sound"]')[id-1].pause();
+        }
+    });
+    </script>
   </body>
 </html>
