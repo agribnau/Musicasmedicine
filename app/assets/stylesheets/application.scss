@@ -447,6 +447,15 @@ fieldset[disabled] .btn-trans.active {
   padding-top: 1em;
 }
 
+.about-img {
+  height: 15em;
+  width: 15em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  margin-left: 18px;
+}
 .about .row {
   margin-bottom: 2em;
   padding: 2em;
