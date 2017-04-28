@@ -11,7 +11,6 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 # image hosting
 gem 'cloudinary', '1.2.3'
-gem 'pry'
 
 #add bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.6'
@@ -41,6 +40,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'rails_12factor', group: :production
+
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -49,6 +51,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
   gem 'factory_girl_rails', '4.7.0'
+  gem 'pry'
   gem 'faker', '1.6.6'
 end
 
