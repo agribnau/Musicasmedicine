@@ -31,6 +31,18 @@ footer a {
   font-size: 1.5em;
 }
 
+.page-title {
+  background-color: rgba(255,255,255,1);
+  padding: 1em;
+  margin-top: -5em;
+  margin-bottom: 3em;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
+}
+
+.right-border {
+
+}
+
 // header
 
 header {
@@ -70,6 +82,10 @@ header a {
   color:inherit;
 }
 
+.brand:hover {
+  color: #ffffff;
+}
+
 a.btn-second {
   margin-top: 10px;
 }
@@ -89,7 +105,7 @@ a.btn-second {
 }
 
 .btn-width {
-  width: 8em;
+  width: 10em;
 }
 
 .padding-bottom {
@@ -267,7 +283,7 @@ fieldset[disabled] .btn-trans.active {
 
 .card-border {
   background-color: rgba(000,0,0,0.4);
-  height: 360px;
+  height: 350px;
   padding-top: 15em;
   transition: all 0.3s ease 0s;
   border: 1.5px solid #fff;
@@ -280,10 +296,56 @@ fieldset[disabled] .btn-trans.active {
     border: 1.5px solid #fff;
 }
 
+// contents in category show
+
+.media-container a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.media-container:hover > .white-highlighter {
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  background-color: rgba(4,131,96,0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.media-container:hover > .orange-hightlighter {
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  background-color: rgba(4,131,96,0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.media {
+  padding: 1em;
+}
+
+.media-thumbnail {
+  height: 10em;
+  width: 20em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+}
+
+.white-highlighter {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.orange-hightlighter {
+  background-color: rgba(243,128,48,0.1);
+}
+
 // testimonial
 
 .content {
-    padding-top: 30px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: #FFFFFF;
+}
+
+.testimonial-container {
+  background-color: rgba(243,128,48,1);
+  margin-bottom: -5em;
 }
 
 /* Testimonials */
@@ -340,13 +402,15 @@ fieldset[disabled] .btn-trans.active {
     display: block;
 }
 .testimonials span.testimonials-name {
-    color: #F38030;
+    // color: #F38030;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: 300;
     margin: 23px 0 7px;
 }
 .testimonials span.testimonials-post {
-    color: #656565;
+    // color: #656565;
+    color: #FFFFFF;
     font-size: 12px;
 }
 
