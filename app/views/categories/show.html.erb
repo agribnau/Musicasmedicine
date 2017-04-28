@@ -8,7 +8,7 @@
     <% @iteration = false %>
     <% @contents.each do |content| %>
     <div class="media-container">
-      <a href="<%= content.website_link != nil ? content.website_link : category_content_path(params[:id]) %>" target="_blank">
+      <a href="<%= content.website_link != '' && content.website_link != nil ? content.website_link : category_content_path(params[:id]) %>" target="_blank">
         <div class="media <%= @iteration == false ? 'white-highlighter' : 'orange-hightlighter' %>">
           <!-- Left thumbnail -->
           <% if @iteration == false %>
