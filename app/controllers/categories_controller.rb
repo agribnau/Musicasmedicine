@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
     if params[:search]
       @contents = Content.search(params[:search]).order("created_at DESC")
     else
-      @contents = @category.contents.order("created_at DESC").take(5)
+      @contents = @category.contents
     end
   end
 
