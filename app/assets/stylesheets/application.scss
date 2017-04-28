@@ -432,24 +432,16 @@ fieldset[disabled] .btn-trans.active {
 
 // About
 
-.about-right {
-    position: absolute;
-    right: 190px;
-    width: 300px;
-    border: 3px ;
-    padding: 10px;
+.about {
+  // background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 1em;
 }
 
-.about-width {
-  width: 1000px;
-  padding: 100px 0px 20px 200px;
+.about .row {
+  margin-bottom: 2em;
+  padding: 2em;
 }
 
-.about-italic {
-    font-style: italic;
-}
-
-.about-img {
-    float: left;
-    margin: 0 0 0px 90px;
+.about h5 {
+  color: #F38030 ;
 }
