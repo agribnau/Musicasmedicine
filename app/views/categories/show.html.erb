@@ -4,14 +4,15 @@
 </div>
 <div class="container">
   <div class="col-md-12">
- 
-    <% @iteration = false %>
+
+    <% media_left = false %>
     <% @contents.each do |content| %>
     <div class="media-container">
-      <a href="<%= content.website_link != '' && content.website_link != nil ? content.website_link : category_content_path(@category, content) %>" target="_blank">
-        <div class="media <%= @iteration == false ? 'white-highlighter' : 'orange-hightlighter' %>">
+
+      <a href="<%= content.website_link != '' && content.website_link != nil ? content.website_link : category_content_path(@category, content) %>" target="<%= content.website_link != '' && content.website_link != nil ? '_blank' : '_self' %>">
+        <div class="media <%= media_left == false ? 'white-highlighter' : 'orange-hightlighter' %>">
           <!-- Left thumbnail -->
-          <% if @iteration == false %>
+          <% if !media_left %>
           <div class="media-left">
             <div class="media-thumbnail" style="background-image: url('<%= content.photo != '' ? content.photo : " http://budapesttimes.hu/wp-content/themes/newsroom14/img/placeholder.png" %>')"></div>
           </div>
@@ -22,7 +23,7 @@
             <p><%= content.info_text.first(250) %>...</p>
           </div>
           <!-- Right thumbnail -->
-          <% if @iteration == true %>
+          <% if media_left %>
           <div class="media-right">
             <div class="media-thumbnail" style="background-image: url('<%= content.photo != '' ? content.photo : " http://budapesttimes.hu/wp-content/themes/newsroom14/img/placeholder.png" %>')"></div>
           </div>
@@ -30,7 +31,7 @@
         </a>
       </div>
 
-      <% @iteration == false ? @iteration = true : @iteration = false %>
+      <% media_left = !media_left %>
 
     </div>
     <!-- media container -->
