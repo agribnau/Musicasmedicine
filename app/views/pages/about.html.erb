@@ -18,7 +18,7 @@
   <!-- photo on left -->
   <div class="row white-highlighter">
     <div class="col-md-3 text-center">
-      <p><%= image_tag about.photo, class: "img-circle about-img"%></p>
+      <div class="about-img" style="background-image:url('<%= about.photo %>')"></div>
       <h3><%= about.name %></h3>
       <h5><%= about.title %></h5>
     </div>
@@ -37,7 +37,7 @@
       <p><%= about.bio %></p>
     </div>
     <div class="col-md-3 text-center">
-      <p><%= image_tag about.photo, class: "img-circle about-img"%></p>
+      <div class="about-img" style="background-image:url('<%= about.photo %>')"></div>
       <h3><%= about.name %></h3>
       <h5><%= about.title %></h5>
     </div>
