@@ -4,7 +4,7 @@ Testimonial.destroy_all
 
 #about
 
-about1 = About.create!(name: "Astrid Gribnau", photo:"https://i1.rgstatic.net/ii/profile.image/AS%3A304847327301633%401449692674187_l/Astrid_Gribnau.png", motto:"\"Man sacrifices his health in order to make money. Then he sacrifices money in order to recuperate his health\" - Dalai Lamai", bio:"MEDICAL application of MUSIC is lagging behind NEUROSCIENTIFIC knowledge. Here is much to gain. For our elderly, our patients and the financial health of our care system. In short, for us as a society. Therefore my GOAL is to: 1. Promote neuroscientifically proven therapeutic effects of music. 2. Stimulate health care providers and policy makers in challenging times. Astrid Gribnau, MD Emergency Medicine Physician Medical Journalist", title:'Emergency Physician' active: true)
+about1 = About.create!(name: "Astrid Gribnau", photo:"https://i1.rgstatic.net/ii/profile.image/AS%3A304847327301633%401449692674187_l/Astrid_Gribnau.png", motto:"\"Man sacrifices his health in order to make money. Then he sacrifices money in order to recuperate his health\" - Dalai Lamai", bio:"MEDICAL application of MUSIC is lagging behind NEUROSCIENTIFIC knowledge. Here is much to gain. For our elderly, our patients and the financial health of our care system. In short, for us as a society. Therefore my GOAL is to: 1. Promote neuroscientifically proven therapeutic effects of music. 2. Stimulate health care providers and policy makers in challenging times. Astrid Gribnau, MD Emergency Medicine Physician Medical Journalist", title:'Emergency Physician', active: true)
 
 #Testimonial
 
