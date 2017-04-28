@@ -1,12 +1,48 @@
-<div class="container about">
-  <div class="row">
-  <% @abouts.each do |about| %>
-    <h2 class="center"><%= about.name %></h2>
-    <br>
-    <p class="about-right about-italic"><%= about.motto %></p>
-    <br>
-    <p><%= image_tag about.photo, class: "img-circle about-img"%></p>
-    <p class="about-right about-width"><%= about.bio %></p>
-  <% end %>
+<div class="text-center page-title">
+  <div class="container">
+    <div class="right-border">
+      <h2>
+        <i class="fa fa-address-card-o" aria-hidden="true"></i>
+        <%= @abouts.size != 0 && @abouts.size <2 ? 'About Me' : 'About Us'%>
+      </h2>
+      <h5>Behind the scenes</h5>
+    </div>
   </div>
+</div>
+
+<div class="container about">
+  <% @iteration = false %>
+  <% @abouts.each do |about| %>
+
+  <% if @iteration == false %>
+  <!-- photo on left -->
+  <div class="row white-highlighter">
+    <div class="col-md-3">
+      <p><%= image_tag about.photo, class: "img-circle about-img"%></p>
+      <h3><%= about.name %></h3>
+    </div>
+    <div class="col-md-9">
+      <p><i><%= about.motto %></i></p>
+      <hr>
+      <p><%= about.bio %></p>
+    </div>
+  </div>
+<% else %>
+  <!-- photo on right -->
+  <div class="row orange-hightlighter">
+    <div class="col-md-9">
+        <p><i><%= about.motto %></i></p>
+        <hr>
+      <p><%= about.bio %></p>
+    </div>
+    <div class="col-md-3">
+      <p><%= image_tag about.photo, class: "img-circle about-img"%></p>
+      <h3><%= about.name %></h3>
+    </div>
+  </div>
+
+  <% end %>
+  <% @iteration == false ? @iteration = true : @iteration = false %>
+  <% end %>
+
 </div>
