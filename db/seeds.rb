@@ -15,15 +15,15 @@ testi3 = Testimonial.create!(first_name: 'Melanie', last_name: 'Kwan', title: 'M
 
  # Category
 
-cat1 = Category.create!(name: 'Music on Brain & Body', description:'General Effect of Music on Brain & Body', photo:'http://www.medicalisland.net/wp-content/uploads/2012/12/music-and-health.jpg', active: true)
-cat2 = Category.create!(name: 'Music & Children', description: 'General Effect of Music on Children', photo:'https://sobernation.com/wp-content/uploads/2013/08/music-as-medicine.jpg', active: true)
-cat3 = Category.create!(name: 'Alzheimer & Dementia', description:'General Effect of Music on Alzheimer & Dementia', photo:'http://maxpixel.freegreatpicture.com/static/photo/1x/Donald-Trump-Trump-Alzheimers-Warning-Dementia-1750965.jpg', active: true)
-cat4 = Category.create!(name: 'Postoperative Pain', description:'General Effect of Music on Postoperative Pain', photo:'http://www.bite-the-dust.com/images/nprmusicmedicine.jpg', active: true)
-cat5 = Category.create!(name: 'Oncology', description:'General Effect of Music in Oncology', photo:'http://www.krogerlaw.com/blog/wp-content/uploads/2014/03/Music.jpg', active: true)
-cat6 = Category.create!(name: 'Depression & Anxiety', description:'General Effect of Music on Depression & Anxiety', photo:'http://hudebni-terapie.cz/wp-content/uploads/MG_1867.jpg', active: true)
-cat7 = Category.create!(name: 'Parkinson\'s', description:'General Effect of Music on Parkinson\'s', photo:'http://alzheimersocietyblog.ca/wp-content/uploads/2012/12/aliveinside11.jpg', active: true)
-cat8 = Category.create!(name: 'Coronary Heart Disease', description:'General Effect of Music on Heart Disease', photo:'https://ac-cdn.azureedge.net/infusionnewssiteimages/agingcare/d574b6d7-7cb0-4dda-9e71-5ce089eb4f56.jpg', active: true)
-cat9 = Category.create!(name: 'ADHD & Autism', description:'General Effect of Music on ADHD & Autism', photo:'http://media.arkansasonline.com/img/photos/2015/06/16/web_music_therapy.jpg', active: true)
+cat1 = Category.create!(name: 'Music on Brain & Body', description:'General Effect of Music on Brain & Body', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383231/music-and-health_gfxthf.jpg', active: true)
+cat2 = Category.create!(name: 'Music & Children', description: 'General Effect of Music on Children', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383255/music-as-medicine_hxort2.jpg', active: true)
+cat3 = Category.create!(name: 'Alzheimer & Dementia', description:'General Effect of Music on Alzheimer & Dementia', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383278/Donald-Trump-Trump-Alzheimers-Warning-Dementia-1750965_vgmgfx.jpg', active: true)
+cat4 = Category.create!(name: 'Postoperative Pain', description:'General Effect of Music on Postoperative Pain', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383312/nprmusicmedicine_htisit.jpg', active: true)
+cat5 = Category.create!(name: 'Oncology', description:'General Effect of Music in Oncology', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383383/Music_vn5a2w.jpg', active: true)
+cat6 = Category.create!(name: 'Depression & Anxiety', description:'General Effect of Music on Depression & Anxiety', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383410/MG_1867_pc3pps.jpg', active: true)
+cat7 = Category.create!(name: 'Parkinson\'s', description:'General Effect of Music on Parkinson\'s', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383439/aliveinside11_x0eygh.jpg', active: true)
+cat8 = Category.create!(name: 'Coronary Heart Disease', description:'General Effect of Music on Heart Disease', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383462/d574b6d7-7cb0-4dda-9e71-5ce089eb4f56_ugptxl.jpg', active: true)
+cat9 = Category.create!(name: 'ADHD & Autism', description:'General Effect of Music on ADHD & Autism', photo:'http://res.cloudinary.com/ds8jmntpk/image/upload/v1493383495/web_music_therapy_thnsaf.jpg', active: true)
 
 # Content
 
