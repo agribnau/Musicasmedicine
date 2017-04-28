@@ -1,7 +1,7 @@
 Content.destroy_all
 Category.destroy_all
 Testimonial.destroy_all
-
+AdminUser.destroy_all
 #about
 
 admin = AdminUser.create!(email: 'admin@lol.com', password: 'abcd1234', password_confirmation: 'abcd1234')
