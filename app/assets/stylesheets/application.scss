@@ -296,6 +296,11 @@ fieldset[disabled] .btn-trans.active {
     border: 1.5px solid #fff;
 }
 
+.btn-homepage {
+  padding: 1em;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
 // contents in category show
 
 .media-container a {
@@ -346,6 +351,7 @@ fieldset[disabled] .btn-trans.active {
 .testimonial-container {
   background-color: rgba(243,128,48,1);
   margin-bottom: -5em;
+  // margin-top: -5em;
 }
 
 /* Testimonials */
