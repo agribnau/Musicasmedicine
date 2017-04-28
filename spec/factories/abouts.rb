@@ -1,5 +1,6 @@
 FactoryGirl.define do
   factory :about do
+    title "Docter"
     name { Faker::Name.name }
     photo "http://www.fillmurray.com/200/300"
     motto "Mundus vult decipi, ergo decipiatur"
